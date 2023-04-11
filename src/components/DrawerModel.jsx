@@ -107,7 +107,7 @@ export default function DrawerModel() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open}>
+      <AppBar position="fixed" open={open} style={{backgroundColor: "rgb(26, 40, 133  )"}}>
         <Toolbar>
           <IconButton
             color="inherit"

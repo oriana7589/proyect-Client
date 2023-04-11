@@ -53,15 +53,23 @@ export default function ClientView() {
           value={value}
           onChange={handleChange}
           centered
-          textColor="secondary"
           TabIndicatorProps={{
             hidden: true,
           }}
+          /* Implementar estylos en el tabs tanto para el color del botón como del texto seleccionado*/
           sx={{
-            "& .Mui-selected": {color: "rgb(255, 255, 255)" },
+            "& .MuiTab-root": {
+              color: "rgb(26, 40, 133)", // Establecer el color del texto de las pestañas aquí
+            },
+            "& .Mui-selected": {
+              color: "#ffffff",
+            },
+            "& .Mui-disabled": {
+              color: "rgb(255, 255, 255)",
+            },
             "& button": { borderRadius: 2 },
-            "& button:hover": { backgroundColor: "rgb(202, 206, 227)" },
-            "& button.Mui-selected": { backgroundColor: "rgb(202, 206, 227)" },
+            "& button:hover": { backgroundColor: "rgb(26, 40, 133 )" , color: "white" },
+            "& button.Mui-selected": { backgroundColor: "rgb(26, 40, 133  )" },
           }}
         >
           <Tab sx={{ m: 1 }} label="TIPO A" {...a11yProps(0)} />
